@@ -1,78 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(2, 59, 59);
+  font-family: "Open Sans", sans-serif;
+  animation: changeBg 5s infinite alternate linear;
+}
+@keyframes changeBg {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #45b276;
+  }
+  50% {
+    background: #94f165;
+  }
+  75% {
+    background: #b8860f;
+  }
+  100% {
+    background: #0c57e2;
+  }
+  125% {
+    background: rgb(2, 59, 59);
+  }
 }
 
 .form {
-    font-family: Helvetica, sans-serif;
-    max-width: 400px;
-    margin: 120px auto;
-    padding: 20px 36px;
-    background: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
+  font-family: Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 120px auto;
+  padding: 20px 36px;
+  background: #0f0e0e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
 }
 
 .form h1 {
-    font-family: cursive;
-    width: 130%;
-    background: aqua;
-    padding: 20px 0;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-size: 25px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  font-family: cursive;
+  width: 130%;
+  background: rgb(1, 64, 120);
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(71, 227, 9, 0.187);
+  font-size: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .form input[type="text"],
 .form input[type="url"] {
-    width: 100%;
-    background: #fff;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: rgb(85, 84, 84);
-    font-weight: bold;
+  width: 100%;
+  background: #fff;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: rgb(85, 84, 84);
+  font-weight: bold;
 }
 
 form {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form button {
-    width: 160px;
-    border-radius: 10px;
-    margin: 14px 0;
-    padding: 3%;
-    background: aqua;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: cursive;
-    border: 2px solid #f7f7f7;
-    transition: all 0.3s ease;
+  width: 160px;
+  border-radius: 10px;
+  margin: 14px 0;
+  padding: 3%;
+  background: rgb(1, 64, 120);
+  color: rgba(71, 227, 9, 0.187);
+  font-weight: bold;
+  cursor: pointer;
+  font-family: cursive;
+  border: 2px solid #046a76;
+  transition: all 0.3s ease;
 }
 
 .form button:hover {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 #container {
-    display: none;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
-

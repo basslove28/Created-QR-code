@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QR code creator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="form">
-        
-        <h1>QR Code using qrious</h1>
+      <h1>Create Your QR code!</h1>
 
-        <form>
-            <input type="url" id="source" name="source" placeholder="write here" required />
-            <button type="button" onclick="generateQRCode()">
-                Generate QR Code
-            </button>
-        </form>
+      <form>
+        <input
+          type="url"
+          id="source"
+          name="source"
+          placeholder="write here"
+          required
+        />
+        <button type="button" onclick="generateQRCode()">
+          Generate QR Code
+        </button>
+      </form>
 
-        <div id="container">
-            <canvas id="qrcode" class="qrcode"></canvas>
-        </div>
+      <div id="container">
+        <canvas id="qrcode" class="qrcode"></canvas>
+      </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-        <script src="script.js">
-
-        </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+      <script src="script.js"></script>
     </div>
-
-
-
-</body>
-
+  </body>
 </html>
