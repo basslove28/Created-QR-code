@@ -6,7 +6,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  animation: changeBg 5s infinite alternate linear;
+  animation: changeBg 3s infinite alternate linear;
 }
 @keyframes changeBg {
   0% {
